@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-quality-dashboard-efal
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-comp-e2e-rjyy-tenant/mc-quality-dashboard/frontend-quality-dashboard-efal@sha256:8189dd5c35b0f464c6492c1ef92de7de7e5c41e32d4d00faf2adab02980e0620
+        name: container-image
+        resources: {}
+status: {}
